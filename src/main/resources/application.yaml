@@ -1,0 +1,48 @@
+
+server:
+  port: 8082
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 728937078982-5octrj4fvber192lkjutt5tgp133s5p0.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - openid
+              - https://www.googleapis.com/auth/userinfo.profile
+              - https://www.googleapis.com/auth/userinfo.email
+
+#spring:
+#  application:
+#    name: your-application-name
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google:
+#            client-id: 728937078982-5octrj4fvber192lkjutt5tgp133s5p0.apps.googleusercontent.com
+#            client-secret: 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
+#            redirect-uri: http://localhost:8082/login/oauth2/code/google
+#            scope:
+#              - openid
+#              - https://www.googleapis.com/auth/userinfo.profile
+#              - https://www.googleapis.com/auth/userinfo.email
+#        provider:
+#          google:
+#            authorization-uri: https://accounts.google.com/o/oauth2/auth
+#            token-uri: https://accounts.google.com/o/oauth2/token
+#            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+#            user-name-attribute: sub
+#
+#proxy:
+#    host: 10.24.63.193
+#    port: 8080
