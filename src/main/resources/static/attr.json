@@ -1,11 +1,12 @@
-{
-  "email_verified":true,
-  "iss":"https://accounts.google.com",
-  "given_name":"Daniel",
-  "locale":"ro",
-  "name":"Daniel Musteață",
-  "exp":"2023-10-17T09:15:16Z",
-  "family_name":"Musteață",
-  "iat":"2023-10-17T08:15:16Z",
-  "email":"danielmusteata2003@gmail.com"
+{at_hash=PiTPqlLxb8SGDl7nC1PQnQ,
+  sub=109755508619426168883,
+  email_verified=true,
+  iss=https://accounts.google.com, given_name=Daniel, locale=ro, nonce=4O-3VHtlgmUbLkDkalmMjOZrOm3KIbJ9BQv2WOJooS8,
+  picture=https://lh3.googleusercontent.com/a/ACg8ocL5_TzuT8OA3KHub5c6zJovPEgnw2LaMRK6j_2A7-8_Ke0=s96-c,
+  aud=[728937078982-5octrj4fvber192lkjutt5tgp133s5p0.apps.googleusercontent.com],
+azp=728937078982-5octrj4fvber192lkjutt5tgp133s5p0.apps.googleusercontent.com,
+name=Daniel Musteață, exp=2023-10-17T10:46:07Z, f
+amily_name=Musteață,
+iat=2023-10-17T09:46:07Z,
+email=danielmusteata2003@gmail.com
 }
