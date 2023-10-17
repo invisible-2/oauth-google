@@ -20,6 +20,7 @@ public class GoogleAccount {
     private String email;
     private String pictureUrl;
     private Date issuedAt;
+    private String sub;
 
     public static GoogleAccount deserialize(Map<String, Object> map) {
         GoogleAccount googleAccount = new GoogleAccount();
@@ -28,6 +29,7 @@ public class GoogleAccount {
         googleAccount.email = (String) map.get("email");
         googleAccount.pictureUrl = (String) map.get("picture");
         googleAccount.issuedAt = toDate(map.get("iat"));
+        googleAccount.sub = (String) map.get("sub");
         return googleAccount;
     }
 

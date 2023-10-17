@@ -23,6 +23,12 @@ public class AccountService {
         return restTemplate.exchange(url, HttpMethod.GET, setAuthorizationHeader(token), Boolean.class, email).getBody();
     }
 
+    @SneakyThrows
+    public AccountDto getAccountByEmail(String email, String token) {
+        String url = ApiUtil.BASE_URL + "accounts/info/email?email={email}";
+        return restTemplate.exchange(url, HttpMethod.GET, setAuthorizationHeader(token), AccountDto.class, email).getBody();
+    }
+
     private HttpEntity<String> setAuthorizationHeader(String token) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
