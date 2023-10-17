@@ -20,7 +20,8 @@ public class SecurityConfig {
             auth.requestMatchers("/").permitAll();
             auth.anyRequest().authenticated();
         })
-                .oauth2Login(Customizer.withDefaults());
+                .oauth2Login(Customizer.withDefaults())
+                .logout(logout -> logout.logoutSuccessUrl("/").permitAll());
         return http.build();
     }
 }
